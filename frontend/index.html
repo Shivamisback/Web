@@ -1,0 +1,31 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech Converter - Convert Text to Speech Online</title>
+  <meta name="description" content="Free online text to speech converter. Convert your text into speech instantly. Simply enter your text and click 'Convert to Speech' to listen to it.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Text to Speech Converter</h1>
+    <p class="description">Convert Text to Speech Online</p>
+  </header>
+  <main>
+    <div class="container">
+      <textarea id="textArea" class="text-input" placeholder="Enter text to convert to speech..."></textarea>
+      <button id="convertBtn" class="convert-btn">Convert to Speech</button>
+      <audio controls id="audioPlayer" class="audio-player" style="display: none;"></audio>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Text to Speech Converter. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
